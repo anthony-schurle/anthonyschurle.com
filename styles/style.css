@@ -1,0 +1,267 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color palette - warm dark theme with violet */
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #242424;
+    --text-primary: #e8e6e3;
+    --text-secondary: #a8a29e;
+    --accent: #d4a574;
+    --accent-hover: #e8b889;
+    --accent-violet: #9d7bb8;
+    --accent-violet-hover: #b490cf;
+    --border: #3a3a3a;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    background-image: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(255, 255, 255, 0.01) 2px,
+            rgba(255, 255, 255, 0.01) 4px
+        );
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Header and navigation */
+header {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-violet);
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Main content sections */
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+section p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Lists in sections */
+section ul {
+    color: var(--text-secondary);
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section li {
+    margin-bottom: 0.25rem;
+}
+
+/* Links in content */
+main a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+main a:hover {
+    border-bottom-color: var(--accent-hover);
+}
+
+/* Project containers */
+.project {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+}
+
+.project h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+/* CV section cards */
+.cv-card {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+}
+
+.cv-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.cv-card p {
+    margin-bottom: 0.75rem;
+}
+
+.cv-card ul {
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Violet accent utilities */
+.violet-accent {
+    color: var(--accent-violet);
+}
+
+.violet-border {
+    border-left-color: var(--accent-violet);
+}
+
+.violet-link {
+    color: var(--accent-violet);
+}
+
+.violet-link:hover {
+    color: var(--accent-violet-hover);
+    border-bottom-color: var(--accent-violet-hover);
+}
+
+/* Blockquote styling */
+blockquote {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 2px solid var(--accent);
+    background-color: var(--bg-secondary);
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+blockquote p {
+    margin-bottom: 0.15rem;
+}
+
+blockquote footer {
+    font-style: normal;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* About section with photo */
+.about-container {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    flex: 1;
+}
+
+/* CIRCULAR VERSION - currently active */
+.photo-frame {
+    flex-shrink: 0;
+    width: 280px;
+    height: 280px;
+    border: 3px solid var(--accent-violet);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* RECTANGULAR VERSION - uncomment to use instead
+.photo-frame {
+    flex-shrink: 0;
+    width: 280px;
+    border: 3px solid var(--accent);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+*/
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 1.5rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.75rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .photo-frame {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 1.5rem;
+    }
+}
