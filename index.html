@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#cv">CV</a></li>
                     <li><a href="#readings">Readings & Solutions</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -26,17 +26,12 @@
                 <h2>About</h2>
                 <div class="about-container">
                     <div class="about-content">
-                        <p>I'm an undergraduate at Rice University studying computer science and mathematics. I'm drawn to questions at the intersection of formal systems, computation, and mathematical structure.</p>
+                        <p>I'm a sophomore at Rice University studying mathematics and computer science. I'm interested in graph theory, combinatorics, and theoretical computer science - particularly how structural properties of discrete objects interact with algorithmic efficiency.</p>
                     </div>
                     <div class="photo-frame">
                         <img src="assets/PROFF_PHOTO.JPG" alt="Anthony Schurle">
                     </div>
                 </div>
-                
-                <blockquote>
-                    <p>"And those who were seen dancing were thought to be insane by those who could not hear the music."</p>
-                    <footer>— Friedrich Nietzsche</footer>
-                </blockquote>
 
                 <blockquote>
                     <p>"Thinking is learning all over again how to see, directing one's consciousness, making of every image a privileged place."</p>
@@ -44,16 +39,29 @@
                 </blockquote>
             </section>
             
-            <section id="research">
-                <h2 class="violet-accent">Research</h2>
+            <section id="projects">
+                <h2 class="violet-accent">Projects</h2>
+                
                 <div class="project violet-border">
-                    <h3>GAN Quality Assessment via Random Number Generation</h3>
-                    <p><em>Lead Research Assistant, Positive Technology Lab</em> | October 2025 - Present</p>
-                    <p>Comparing Perceptual Image Distance (PID) scores from various natural random number generation sources against pseudo-random number generators (PRNGs) to assess GAN output quality and randomness characteristics.</p>
+                    <h3>Graft: Interactive Graph Theory Sandbox</h3>
+                    <p><em>JavaScript, SVG</em> | January 2026 - Present</p>
+                    <p>A Desmos-style web application for building and exploring graphs through an intuitive visual interface. Features real-time computation of graph properties including degree sequences, connectivity, bipartiteness, and chromatic number. Designed for students testing constructions, instructors creating examples, and researchers prototyping conjectures.</p>
+                </div>
+
+                <div class="project violet-border">
+                    <h3>r2a: RISC-V Disassembler</h3>
+                    <p><em>Python, RISC-V</em> | Fall 2025</p>
+                    <p>Developed a formal specification for RISC-V instruction decoding using decision-tree optimization. Built a testing pipeline verifying binary equivalence between assembly and machine code.</p>
+                </div>
+
+                <div class="project violet-border">
+                    <h3>Epidemiological Transmission Mapping</h3>
+                    <p><em>Python</em> | Fall 2025</p>
+                    <p>Modeled bacterial infection spread as a complete weighted directed graph using genetic (Hamming distance) and epidemiological data. Implemented greedy algorithms to infer a rooted directed minimum spanning tree (RDMST) representing likely transmission pathways.</p>
                 </div>
                 
-                <h3 style="margin-top: 2rem; color: var(--text-primary); font-size: 1.1rem;">Publications & Presentations</h3>
-                <p style="color: var(--text-secondary); font-style: italic;">Publications and conference presentations will be listed here as they become available.</p>
+                <h3 style="margin-top: 2rem; color: var(--text-primary); font-size: 1.1rem;">Future Work</h3>
+                <p style="color: var(--text-secondary); font-style: italic;">Research publications and presentations will be listed here as they become available.</p>
             </section>
             
             <section id="cv">
@@ -63,23 +71,13 @@
                 <div class="cv-card">
                     <h3>Education</h3>
                     <p><strong>Rice University</strong> | Houston, TX | August 2024 - May 2028<br>
-                    B.S. in Mathematics & B.A. in Computer Science<br>
-                    GPA: 3.75</p>
+                    B.A. in Mathematics & B.S. in Computer Science<br>
+                    GPA: 3.74/4.00</p>
                     
                     <p><strong>Relevant Coursework:</strong></p>
                     <ul>
-                        <li>Calculus I-III</li>
-                        <li>Honors Ordinary Differential Equations</li>
-                        <li>Honors Statistics</li>
-                        <li>Honors Linear Algebra</li>
-                        <li>General Topology</li>
-                        <li>Elements of Analysis</li>
-                        <li>Number Theory</li>
-                        <li>Computer Organization</li>
-                        <li>Introduction to Computer Systems</li>
-                        <li>Program Design</li>
-                        <li>Computational Thinking</li>
-                        <li>Algorithmic Thinking</li>
+                        <li><em>Graduate:</em> General Topology (current)</li>
+                        <li><em>Undergraduate:</em> Honors Linear Algebra (current), Number Theory (current), Potpourri in Extremal Graph Theory (current), Honors Ordinary Differential Equations, Honors Statistics, Algorithmic Thinking</li>
                     </ul>
                 </div>
                 
@@ -88,33 +86,29 @@
                     <p><strong>Trustee Distinguished Academic Scholarship</strong> | Rice University | $80,000<br>
                     Merit-based scholarship awarded to incoming students demonstrating exceptional academic achievement.</p>
 
-                    <p><strong>President's Honor Roll</strong> | Rice University | Honor<br>
-                    Merit-based recognition awarded to students in the top 30% of undergraduates based on semester GPA.</p>
+                    <p><strong>President's Honor Roll</strong> | Rice University | Fall 2025<br>
+                    Recognition awarded to students in the top 30% of undergraduates based on semester GPA.</p>
                 </div>
                 
                 <div class="cv-card">
                     <h3>Experience</h3>
-                    <p><strong>Lead Research Assistant</strong> | Positive Technology Lab | October 2025 - Present<br>
-                    Comparing Perceptual Image Distance (PID) scores from various natural random number generation sources against pseudo-random number generators to assess GAN output quality.</p>
+                    <p><strong>Teaching Assistant - Algorithmic Thinking (COMP182)</strong> | Rice University | January 2026 - Present<br>
+                    Supporting students in algorithm design, asymptotic analysis, and correctness reasoning.</p>
                     
-                    <p><strong>COMP 140 Teaching Assistant</strong> | Rice University CS Department | August 2025 - Present<br>
-                    Led weekly lab sessions for 20+ students, hosted office hours with 100+ student interactions providing support in debugging, problem-solving, and code optimization. Coordinated and led a campus-wide scavenger hunt event for 200+ attendees featuring A* search algorithm implementation across various campus buildings, managing fellow TAs and event logistics.</p>
-                    
-                    <p><strong>COMP 182 Teaching Assistant</strong> | Rice University CS Department | January 2026 - Present<br>
-                    Teaching assistant for Algorithmic Thinking, supporting students in understanding algorithm design, analysis, and computational complexity.</p>
+                    <p><strong>Teaching Assistant - Computational Thinking (COMP140)</strong> | Rice University | August 2025 - December 2025<br>
+                    Led weekly lab sessions for 20+ students and hosted office hours with 100+ student interactions. Coordinated a campus-wide scavenger hunt event for 200+ attendees featuring A* search algorithm implementation.</p>
                 </div>
                 
                 <div class="cv-card">
                     <h3>Technical Skills</h3>
-                    <p><strong>Languages:</strong> Python, SQL (PostgreSQL), TypeScript (JavaScript), HTML5, CSS, R, SASS, RISC-V, x86-64, C, Java</p>
-                    <p><strong>Frameworks & Libraries:</strong> FastAPI, Gunicorn, Uvicorn, SQLAlchemy, pandas, numpy, PyTorch, Matplotlib</p>
-                    <p><strong>Tools:</strong> Git & GitHub, Docker, Linux Shell</p>
+                    <p><strong>Languages:</strong> Python, C, Java, JavaScript, RISC-V Assembly, x86-64 Assembly</p>
+                    <p><strong>Tools:</strong> LaTeX, Git & GitHub, Docker, Linux Shell</p>
                 </div>
             </section>
             
             <section id="readings">
                 <h2 class="violet-accent">Readings & Solutions</h2>
-                <p>I'm working through foundational texts in mathematics, logic, and computational theory. Solutions are provided freely to help others learning these subjects - ¬(paywalls) ∧ ¬(bullshit).</p>
+                <p>I'm working through foundational texts in mathematics and theoretical computer science. Solutions are provided freely to help others learning these subjects.</p>
                 
                 <h3>Current</h3>
                 <ul>
@@ -127,14 +121,14 @@
             
             <section id="contact">
                 <h2>Contact</h2>
-                <p>I'm always interested in conversations about formal systems, computational theory, and mathematical foundations.</p>
+                <p>I'm interested in conversations about graph theory, combinatorics, and theoretical computer science.</p>
                 <p>Email: <a href="mailto:as556@rice.edu" target="_blank">as556@rice.edu</a></p>
                 <p>GitHub: <a href="https://github.com/anthony-schurle" target="_blank">github.com/anthony-schurle</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/anthony-schurle/" target="_blank">linkedin.com/in/anthony-schurle</a></p>
             </section>
         </main>
         <footer>
-            <p>&copy; 2025 Anthony Schurle | Last updated: December 2025</p>
+            <p>&copy; 2025 Anthony Schurle | Last updated: February 2026</p>
         </footer>
     </body>
 </html>
